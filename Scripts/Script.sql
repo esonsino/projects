@@ -1,0 +1,2 @@
+-- netprice * quantity * exchangerate
+
