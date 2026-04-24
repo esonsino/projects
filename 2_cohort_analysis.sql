@@ -36,4 +36,3 @@ FROM cohort_analysis
 WHERE orderdate = first_purchase_date
 GROUP BY 
     cohort_year;
-X
