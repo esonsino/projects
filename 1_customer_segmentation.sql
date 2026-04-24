@@ -40,3 +40,4 @@ segment_values AS (
 	FROM segment_values
 	GROUP BY customer_segment
 	ORDER BY customer_segment
+x
