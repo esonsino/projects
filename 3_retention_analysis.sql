@@ -29,4 +29,4 @@ SELECT
 	ROUND(COUNT(customerkey) / SUM(COUNT(customerkey)) OVER(), 2) AS status_percentage
 FROM churned_customers
 GROUP BY customer_status 
-X
+
