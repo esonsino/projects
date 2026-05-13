@@ -4,7 +4,6 @@
 
 ## Business Questions
 1. **Customer Segmentation:** Who are our most valuable customers? 
-2. **Cohort Analysis:** How do different customer groups generate revenue?
 3. **Retention Analysis:** Which customers haven't purchased recently?
 
 ## Analysis Approach
@@ -47,30 +46,8 @@ $350 is the average LTV for the low-value customer
     * Focus on converting $4.3M segment to mid-value through targeted offers-
 
 
-### 2. Cohort Analysis
-- Tracked revenue and customer count per cohorts
-- Cohorts were grouped by year of first purchase
-- Analyzed customer retention at a cohort level
 
-Query: [2_cohort_analysis.sql](/2_cohort_analysis.sql)
-
-
-**📈 Visualization:**
-
-![Cohort Analysis](/images/2_cohort_analysis.png)
-
-📊 **Key Findings:**
-- Revenue per customer shows a significant decreasing trend over time
-    * 2022-2024 cohorts are consistently performing worse than earlier cohorts
-    * Although net revenue is increasing, this is likely due to a larger customer base, which is not reflective of customer value
-
-💡 **Business Insights**
-- Value extracted from customers is decreasing over time and needs further investigation.
-- In 2023 we saw a drop in number of customers acquired, which is concerning.
-- With both lowering Lifetime Value and decreasing customer acquisition, the company is facing a potential revenue decline.
-
-
-### 3. Retention Analysis
+### 2. Retention Analysis
 - Identified customers at risk of churning
 - Analyzed last purchase patterns
 - Calculated customer-specific metrics
