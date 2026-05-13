@@ -8,7 +8,7 @@ WITH customer_ltv AS (
 		SUM(total_net_revenue) AS total_ltv
 	FROM cohort_analysis ca 	
 	GROUP BY 
-		customerkey, givenname, surname
+		customerkey
 ),
 -- 2. Get the 3 percentiles of the lifetime value (25-50-75). This will help me to segment the customers
 customer_segments AS (
