@@ -10,7 +10,7 @@ WITH customer_ltv AS (
 	FROM cohort_analysis ca 
 	GROUP BY customerkey, cleaned_name
 ),
--- 2. Get the 25th and thr 75th percentile of the LTV. This will help us segment 
+-- 2. Get the 25th and the 75th percentile of the LTV. This will help us segment 
 customer_segments AS (
 	SELECT 
 		PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY total_ltv) AS ltv_25th_percentile,
