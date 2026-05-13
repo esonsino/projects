@@ -1,4 +1,5 @@
 --Title: Customer Revenue by Cohort (NOT adjusted for time in market)
+/* Groups revenue by cohort year (the year a customer first purchased). It treats all customers within a cohort equally, regardless of how long they've been a customer. */
 SELECT
     cohort_year,
     SUM(total_net_revenue) AS total_revenue,
@@ -9,6 +10,8 @@ GROUP BY
     cohort_year;
 
 -- Title: Customer Revenue by Cohort (Adjusted for time in market)
+/* Instead of grouping by cohort year, it groups by days since first purchase. This normalizes for time in market by asking:
+"How much revenue do customers generate at day 0, day 1, day 30, day 365... of their lifecycle?" */
 WITH purchase_days AS (
     SELECT
         customerkey,
